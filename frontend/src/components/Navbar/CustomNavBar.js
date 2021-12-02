@@ -12,16 +12,12 @@ import brand from '../../static/brand.png'
 const socket = io.connect('ws://127.0.0.1:5000',{transports: ['websocket'], secure: true, port: '5000'});
 
 export default function NavBar(props) {
-    useEffect(() => {
-        socket.on("connect", (status) => {
-            console.log("Ready");
-        })
-    }, [])
 
     return (
         <Navbar class="navbar">
             <Container>
-                <Navbar.Brand sty href="https://rosatom.ru/">
+                <Navbar.Brand  style={{    position: "absolute",
+                    left: "5px"}} href="https://rosatom.ru/">
                     <img
                         src={brand}
                         height="30px"
