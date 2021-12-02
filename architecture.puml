@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/component-diagram
+
+component DockerCompose {
+    package "Backend" {
+      database "PostgreSQL" {
+      }
+      PostgreSQL <-> [Django]
+      [Cache] <-> [Django]
+      component DataProcessing {
+        node "ML model" {
+        }
+      }
+      DataProcessing <-> [Django]
+      DataProcessing --> ExternalAPI
+      [Django] --> Alerts
+    }
+
+    package "Frontend" {
+        component ReactApp
+    }
+
+    [Django] <--> ReactApp
+    ReactApp <-> [Nginx]
+}
+
+component ExternalAPI {
+}
+
+component Alerts {
+}
+
+
+@enduml
