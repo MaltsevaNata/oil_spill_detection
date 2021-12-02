@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'RosatomReg';
+    src: local('RosatomReg'), url(../../static/fonts/Rosatom-Regular_W.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RosatomBold';
+    src: local('RosatomBold'), url(../../static/fonts/Rosatom-Bold_W.woff) format('woff');
+}
+
+
+.navbar {
+    padding: unset;
+    background-color: rgb(121,136,175);
+    height: 30px;
+}
+
+.auth {
+    font-family: RosatomBold;
+    font-size: 15px;
+}
+
+.text {
+    color: white;
+}
+
+.text:hover {
+    color: white;
+}
+
+.delimiter {
+    color: white;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.brand {
+    position: absolute!important;
+    left: 0!important;
+}

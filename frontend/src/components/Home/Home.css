@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'RosatomBold';
+    src: local('RosatomBold'), url(../../static/fonts/Rosatom-Bold_W.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RosatomLight';
+    src: local('RosatomLight'), url(../../static/fonts/Rosatom-Light_W.woff) format('woff');
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.brand-name {
+    position: absolute;
+    width: 780px;
+    height: 187px;
+    left: 5vw;
+    top: 30px;
+    font-family: RosatomBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15vh;
+    line-height: 187px;
+    letter-spacing: 0.115em;
+    color: #FFFFFF;
+    display: inline-flex;
+}
+
+.brand-name-light {
+    font-family: RosatomLight;
+    color: #6DACDE;
+
+}
