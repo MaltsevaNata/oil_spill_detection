@@ -1,0 +1,25 @@
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 5px solid rgba(0,0,0,.2);
+    border-radius: 2rem!important;
+    outline: 0;
+    background-color: #B4D7F2!important;
+}
+
+.button-login {
+    background-color: #3067A7;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3067A7!important;
+    border-color: #3067A7!important;
+    font-family: 'ROSATOMREG'!important;
+    margin-left: 40%!important;
+}

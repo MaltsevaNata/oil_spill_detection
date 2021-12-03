@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'RosatomBold';
+    src: local('RosatomBold'), url(../../static/fonts/Rosatom-Bold_W.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RosatomLight';
+    src: local('RosatomLight'), url(../../static/fonts/Rosatom-Light_W.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RosatomReg';
+    src: local('RosatomReg'), url(../../static/fonts/Rosatom-Regular_W.woff) format('woff');
+}
+
+.icon {
+    color: white;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.title {
+    font-family: RosatomReg;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    font-size: 8vh;
+}
+
+.report {
+    font-family: RosatomLight;
+    font-size: 4vh;
+    margin-left: 8%;
+    display: inline-block;
+    display: inline-flex;
+    width: 80%;
+    margin-right: 8%;
+}
+
+.figcapt {
+    text-align: center;
+    font-size: 2vh;
+}
+
+.parameter {
+    color: #A5C3F2;
+    font-family: RosatomBold;
+    font-weight: bold;
+    display: inline;
+}
+
+.download {
+    color: white;
+    text-decoration: underline;
+}
+
+.download:hover {
+    color: white;
+}
+
+.background-report {
+    height: 100vh!important;
+}
