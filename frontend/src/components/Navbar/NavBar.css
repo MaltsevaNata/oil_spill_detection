@@ -13,6 +13,10 @@
     padding: unset;
     background-color: rgb(121,136,175);
     height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* this is optional and should be different for every project */
+
 }
 
 .auth {
