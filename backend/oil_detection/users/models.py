@@ -45,6 +45,9 @@ class ROLES(models.TextChoices):
 class Role(models.Model):
     name = models.CharField(max_length=255, choices=ROLES.choices)
 
+    def __str__(self):
+        return f"{self.name}"
+
 
 class UserRole(models.Model):
     user = models.ForeignKey(Profile, on_delete=models.CASCADE)
@@ -54,6 +57,9 @@ class UserRole(models.Model):
         verbose_name = 'User Role relation'
         verbose_name_plural = 'User Role relations'
 
+    def __str__(self):
+        return f"{self.user}: {self.role}"
+
 
 class UserRegion(models.Model):
     user = models.ForeignKey(Profile, on_delete=models.CASCADE)
@@ -62,3 +68,6 @@ class UserRegion(models.Model):
     class Meta:
         verbose_name = 'User Region relation'
         verbose_name_plural = 'User Region relations'
+
+    def __str__(self):
+        return f"{self.user}: {self.region}"

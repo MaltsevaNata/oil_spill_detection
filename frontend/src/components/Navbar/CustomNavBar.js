@@ -9,7 +9,6 @@ import React, {useEffect} from "react";
 import styles from "./NavBar.css"
 import brand from '../../static/brand.png'
 
-const socket = io.connect('ws://127.0.0.1:5000',{transports: ['websocket'], secure: true, port: '5000'});
 
 export default function NavBar(props) {
 
