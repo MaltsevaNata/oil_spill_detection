@@ -1,4 +1,4 @@
-from .sentinel_L2A_bands import get_L2A_bands_in_bbox
+from .pipeline_utils.sentinel_api import get_L2A_bands_in_bbox
 
 
 def detect_spills(band):
