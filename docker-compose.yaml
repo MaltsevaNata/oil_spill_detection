@@ -9,7 +9,32 @@ services:
     env_file:
       - ./.env.dev
     ports:
-      - "5432:5432"
+      - 5432:5432
+
+  frontend:
+    container_name: rosatom_frontend
+    build:
+      context: frontend/.
+    ports:
+      - 8080:80
+    restart: always
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - django
+
+  django:
+    container_name: rosatom_backend
+    build:
+      context: backend/.
+    ports:
+      - 8000:8000
+    restart: always
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - postgres
+
 
 volumes:
   psql_data:
