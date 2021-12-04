@@ -9,6 +9,10 @@ way_url = openstreetmap_api_url + 'way'
 node_url = openstreetmap_api_url + 'node'
 
 
+def get_area_around(spill):
+    return [spill[0] + 2, spill[1] + 2]
+
+
 def get_pipeline_from_bbox(westernmost, southernmost, easternmost, northernmost):
     bbox = {'bbox': f'{westernmost},{southernmost},{easternmost},{northernmost}'}
     r = requests.get(openstreetmap_api_url, params=bbox)

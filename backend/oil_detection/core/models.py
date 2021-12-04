@@ -15,6 +15,8 @@ class OilSpill(models.Model):
     coordinate_y = models.FloatField()
     surface_area = models.FloatField()
     timestamp = models.DateTimeField()
+    damage_score = models.FloatField()
+    reason = models.TextField()
 
     def __str__(self):
         return f"({self.coordinate_x}, {self.coordinate_y})"
