@@ -17,7 +17,7 @@
 За клиентскую часть отвечает React приложение.
 
 # Структура базы данных
-![team](./db.JPG)
+![db](./db.JPG)
 
 # Дизайн
 https://www.shorturl.at/ptvJT
