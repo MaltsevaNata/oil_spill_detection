@@ -10,7 +10,7 @@ node_url = openstreetmap_api_url + 'node'
 
 
 def get_area_around(spill):
-    return [spill[0] + 2, spill[1] + 2]
+    return [spill.coord_northwest[0] + 2, spill.coord_northwest[1] + 2, spill.coord_southeast[0] + 2, spill.coord_southeast[1] + 2,]
 
 
 def get_pipeline_from_bbox(westernmost, southernmost, easternmost, northernmost):

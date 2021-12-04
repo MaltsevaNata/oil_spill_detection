@@ -36,7 +36,7 @@ export default function Home(props) {
         console.log(bounds);
         setNoarthEast(bounds._northEast);
         setSouthWest(bounds._southWest);
-        httpClient.post("http://127.0.0.1:8000/api/bbox", {"north_east": bounds._northEast, "south_west": bounds._southWest},{
+        httpClient.post("http://127.0.0.1:8000/api/bbox", {"region":"Ханты-Мансийский АО", "north_east": bounds._northEast, "south_west": bounds._southWest},{
         }).then(response => {
             console.log(response);
             let max_left = Math.max.apply(Math, response.data[0][0]);

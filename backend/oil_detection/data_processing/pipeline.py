@@ -28,7 +28,7 @@ def detection_pipeline(region, upper_left, upper_right, bottom_left, bottom_righ
         # find reason of the spill
         area_around = get_area_around(spill)
 
-        pipes_near = get_pipeline_from_bbox(**area_around)
+        pipes_near = get_pipeline_from_bbox(*area_around)
         reason = "Неизвестно"
         if pipes_near:
             reason = f"Ближайшие нефтепроводы: {pipes_near}"
@@ -42,5 +42,4 @@ def detection_pipeline(region, upper_left, upper_right, bottom_left, bottom_righ
         url = os.environ.get("API_URL") + 'oil_spills/'
         response = requests.post(url=url, data=spill)
         response.raise_for_status()
-
     return spills_coords

@@ -1,4 +1,4 @@
-from .SpillModel import OilSpill
+from ..SpillModel import OilSpill
 
 
 def calculate_damage(spill: OilSpill):

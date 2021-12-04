@@ -1,12 +1,12 @@
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 
 from pydantic import BaseModel
 
 
 class OilSpill(BaseModel):
-    coord_northwest: [float, float]
-    coord_southeast: [float, float]
+    coord_northwest: List[float]
+    coord_southeast: List[float]
     surface_area: Optional[float]
     timestamp: datetime
     damage_score: Optional[float]
