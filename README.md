@@ -33,4 +33,4 @@ https://www.shorturl.at/ptvJT
 
 
 # КОМАНДА
-![team](./ololo.JPG)
+![team](./ololo.jpg)
